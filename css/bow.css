@@ -50,6 +50,7 @@
   margin: 0 auto;
   width: 100%;
   height: 100vh;
+  background-color: #f9f8f4;
 }
 
 .bow-header-item {
@@ -70,7 +71,6 @@
   background-attachment: fixed;
   background-size: contain;
   float: left;
-  transition: background 2s linear;
 }
 
 #bowImage img{
@@ -82,13 +82,15 @@
   bottom: 10%;
   right: 10%;
   transform: translate(-10%, -10%);
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
 .bow-section {
   position: relative;
   width: 66.6666%;
   margin: 0 auto;
-  padding: 10rem 0;
+  padding: 4rem 0;
 }
 
 .gallery-wrap {
@@ -99,4 +101,3 @@
   flex-wrap: wrap;
   justify-content: center;  
 }
-
