@@ -1,0 +1,102 @@
+.figure {
+  width: 300px;
+  height: 300px;
+  padding: 0.5em;
+}
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  padding-bottom: 2rem;  
+}
+
+.figure img {
+  max-width: 100%;
+}
+
+.bow-title {
+  width: 100%;
+  font-size: 3em;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.2;
+  color: #000;
+}
+
+.bow-header-text {
+  position: absolute;  
+  top: 40%; 
+  left: 50%; 
+  transform: translate(-50%, -40%);    
+  width: 60%;
+  font-style: italic;
+  line-height: 1.8; 
+}
+
+.credit {
+  text-align: right;
+  font-style: normal;
+  padding-top: 1rem;
+}
+
+.bow-header {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
+.bow-header-item {
+  position: relative;
+  display: block;
+  width: 65%;
+  height: 100vh;
+  float: left;
+}
+
+#bowImage {
+  position: relative; 
+  display: block; 
+  width: 33%;
+  height: 100vh;
+  background-image: url(../bow/bodyofwork-header-0.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  float: left;
+  transition: background 2s linear;
+}
+
+#bowImage img{
+  max-width: 100%;
+}
+
+.prompt {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  transform: translate(-10%, -10%);
+}
+
+.bow-section {
+  position: relative;
+  width: 66.6666%;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+.gallery-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
