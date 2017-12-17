@@ -26,12 +26,12 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: transparent;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: transparent;
     text-shadow: none;
 }
 
@@ -761,7 +761,9 @@ li.dropdown {
 }
 
 
-
+:focus {
+    outline: none;
+}
 
 /* ==========================================================================
    Helper classes

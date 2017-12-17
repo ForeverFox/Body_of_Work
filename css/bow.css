@@ -31,18 +31,28 @@
 
 .bow-header-text {
   position: absolute;  
-  top: 40%; 
+  top: 30%; 
   left: 50%; 
-  transform: translate(-50%, -40%);    
-  width: 60%;
+  transform: translate(-50%, -30%);    
+  width: 50%;
   font-style: italic;
   line-height: 1.8; 
 }
 
-.credit {
+.main-text {
+  padding: 0.25rem 0;
+}
+
+.credit, .order {
   text-align: right;
   font-style: normal;
   padding-top: 1rem;
+}
+
+.info {
+  font-size: 0.80rem;
+  font-style: normal;
+  padding: 0 0 2rem 0;
 }
 
 .bow-header {
@@ -93,11 +103,135 @@
   padding: 4rem 0;
 }
 
-.gallery-wrap {
+#gallery-wrap {
   position: relative;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;  
+}
+
+
+
+/* media queries (plan to use SASS in the future to increase efficiency of these queries and make the entire site more responsive) */
+@media screen and (min-width: 1024px) {
+  .bow-header-text {
+    width: 90%;
+  }
+
+  .main-text, .credit {
+    font-size: 0.85rem;
+  }
+
+  .info {
+    padding: 0;
+    font-size: 0.75rem;
+  }
+
+  .prompt {
+    position: absolute;
+    top: 25%;
+    right: 15px;
+    transform: translateY(-25%);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+ .main-text, .bow-header-text {
+  font-size: 0.95rem;
+ } 
+
+ .info {
+  font-size: 0.75rem;
+  font-style: normal;
+  padding: 0 0 0.5rem 0;
+}
+
+ .credit {
+  font-size: 0.75rem;
+  padding: 0;
+ }
+
+.bow-header-text {
+  position: absolute;  
+  top: 0; 
+  left: 50%; 
+  transform: translateX(-50%);    
+  width: 80%;
+  font-style: italic;
+  line-height: 1.8; 
+}
+}
+
+@media screen and (min-width: 1440px) {
+ .main-text, .credit {
+  font-size: 0.95rem;
+ } 
+
+ .credit {
+  padding: 0;
+ }
+
+.info {
+  font-size: 0.80rem;
+  font-style: normal;
+  padding: 0 0 2rem 0;
+} 
+
+.bow-header-text {
+  font-size: 0.95rem;
+  width: 66%;
+}
+
+.prompt {
+  top: 85%;
+  right: 20px;
+  transform: translateY(-85%);
+}
+}
+
+@media screen and (min-width: 1680px) {
+.info {
+  padding: 0 0 1rem 0;
+} 
+
+ .main-text {
+  font-size: 1rem;
+ } 
+
+.bow-header-text {
+  font-size: 1rem;
+  width: 55%;
+  padding-top: 2rem;
+} 
+
+.prompt {
+  right: 50px;
+}  
+}
+
+@media screen and (min-width: 1920px) {
+ .main-text {
+  font-size: 1.05rem;
+ } 
+
+.bow-header-text {
+  font-size: 1rem;  
+  width: 50%;
+}   
+
+.bow-header-text {
+  position: absolute;  
+  top: 10%; 
+  left: 50%; 
+  transform: translate(-50%, -10%);    
+  width: 50%;
+  font-style: italic;
+  line-height: 1.8; 
+}
+
+.prompt {
+  right: 100px;
+} 
 }
