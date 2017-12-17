@@ -10,12 +10,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans: 100,400|Quicksand:300,400|Roboto+Slab:100,300,400|Roboto:100,300');
-   
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -99,6 +93,8 @@ html {
 	box-sizing: border-box;
 	height: 100%;
 	margin: 0;
+    font-size: 16px;
+    line-height: 1.4;    	
 }
 
 *, *:before, *:after {
@@ -617,20 +613,7 @@ li.dropdown {
 	margin: 1rem 0 1rem 3rem;
 }
 
-/* Body of Work and Anna */
-
-.thumb {
-	float: left;
-	width: 6.25em;
-	margin: 1rem 1rem 1rem 0;
-}
-
-.thumb img {
-	max-width: 100%;
-	display: block;
-}
-
-
+/* Anna */
 .anna h1 {
 	font-size: 6em;
 	font-family: "Roboto Slab", serif;

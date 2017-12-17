@@ -2,15 +2,14 @@ $("document").ready(function() {
 	var bow = $("#bowImage");
 // Creates an array of images to cycle through 
 	var bowBackgrounds = new Array(
-		"bodyofwork-header-0.jpg",
-		"bow-intro-01.jpg",
+		"bow-intro-02.jpg",		
 		"bow-intro-10.jpg",
-		"bow-intro-11.jpg",
-		"bow-intro-03.jpg",
 		"bow-intro-02.jpg",
 		"bow-intro-04.jpg",
 		"bow-intro-08.jpg",
 		"bow-intro-13.jpg",
+		"bow-intro-01.jpg",	
+		"bow-intro-03.jpg",	
 		"bow-intro-12.jpg",
 		"bow-intro-09.jpg"												
 		);
@@ -45,6 +44,10 @@ $("document").ready(function() {
 			duration: 300 // don't foget to change the duration also in CSS
 		}
 	}); */
+
+	 $("#prompt").click(function() {
+	 	$("#main-paragraph").animate({left: "500"}, 1000, "swing");
+	 });
 
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a',
