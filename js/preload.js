@@ -1,15 +1,6 @@
 $("document").ready(function() {
 // Image preloading
-  var bowImages = new Array()
-
-  function bowPreload(){
-    for (i = 0; i < bowPreload.arguments.length; i++) {
-	   bowImages[i] = new Image()
-	   bowImages[i].src = bowPreload.arguments[i]
-    }
-  }
-
-bowPreload(
+  var bowImages = new Array(
     "../bow/bodyofwork-header-0.jpg",
     "../bow/bow-intro-01.jpg",
     "../bow/bow-intro-10.jpg",
@@ -71,7 +62,17 @@ bowPreload(
     "../bow/bow-54.jpg", 
     "../bow/bow-55.jpg", 
     "../bow/bow-57.jpg", 
-    "../bow/bow-58.jpg");
+    "../bow/bow-58.jpg"
+    );
+
+  function bowPreload(){
+    for (i = 0; i < bowPreload.arguments.length; i++) {
+	   bowImages[i] = new Image();
+	   bowImages[i].src = bowPreload.arguments[i];
+    }
+  };
+  
+  bowPreload();
 
 /* Smooth Scrolling Effect leveraged from https://css-tricks.com/snippets/jquery/smooth-scrolling/*/
 // Select all links with hashes
